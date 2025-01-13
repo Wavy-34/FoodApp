@@ -1,0 +1,5 @@
+mysql
+load_dotenv
+mypy
+ruff
+black
