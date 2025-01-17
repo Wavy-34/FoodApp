@@ -8,8 +8,6 @@ black==24.10.0
     # via -r requirements.in
 click==8.1.8
     # via black
-colorama==0.4.6
-    # via click
 load-dotenv==0.1.0
     # via -r requirements.in
 mypy==1.14.1
@@ -18,10 +16,8 @@ mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
-mysql==0.0.3
+mysql-connector==2.2.9
     # via -r requirements.in
-mysqlclient==2.2.7
-    # via mysql
 packaging==24.2
     # via black
 pathspec==0.12.1
