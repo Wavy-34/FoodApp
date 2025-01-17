@@ -1,11 +1,17 @@
 import mysql.connector
 
-# Connect to MySQL
-conn = mysql.connector.connect(
-    host="localhost",
-    user="",
-    password="",
-    database="your_database"
-)
+from food_app.consts import DATABASE_PASSWORD
 
-cursor = conn.cursor()
+def shw_databases(user: str, password: str):
+  mydb = mysql.connector.connect(
+    host="localhost",
+    user="Wavy",
+    password= DATABASE_PASSWORD
+  )
+  mycursor = mydb.cursor()
+
+  mycursor.execute("SHOW DATABASES")
+
+  for x in mycursor:
+    print(x)
+
